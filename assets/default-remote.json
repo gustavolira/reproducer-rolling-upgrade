@@ -1,0 +1,19 @@
+{
+  "distributed-cache": {
+    "mode": "SYNC",
+    "persistence": {
+      "remote-store": {
+        "protocol-version": "2.5",
+        "shared": true,
+        "hotrod-wrapping": true,
+        "raw-values": true,
+        "cache": "default",
+        "segmented": false,
+        "remote-server": {
+          "host": "127.0.0.1",
+          "port": 11222
+        }
+      }
+    }
+  }
+}

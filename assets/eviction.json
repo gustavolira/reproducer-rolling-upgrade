@@ -1,0 +1,24 @@
+{"distributed-cache": {
+    "mode": "SYNC",
+    "encoding": {
+      "key": {
+        "media-type": "text/plain"
+      },
+      "value": {
+        "media-type": "text/plain"
+      }
+    },
+    "memory": {
+      "max-count": 1000
+    },
+    "persistence": {
+      "passivation": false,
+      "file-store": {
+        "fetch-state": true,
+        "purge": false,
+        "read-only": false,
+        "preload": true
+      }
+    }
+  }
+}

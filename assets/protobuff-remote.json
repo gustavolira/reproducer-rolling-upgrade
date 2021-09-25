@@ -1,0 +1,33 @@
+{
+  "distributed-cache": {
+    "mode": "SYNC",
+    "encoding": {
+      "key": {
+        "media-type": "application/x-protostream"
+      },
+      "value": {
+        "media-type": "application/x-protostream"
+      }
+    },
+    "persistence": {
+      "remote-store": {
+        "shared": true,
+        "hotrod-wrapping": true,
+        "raw-values": true,
+        "cache": "protobuff",
+        "segmented": false,
+        "remote-server": {
+          "host": "127.0.0.1",
+          "port": 11222
+        }
+      },
+      "passivation": false,
+      "file-store": {
+        "fetch-state": true,
+        "purge": false,
+        "read-only": false,
+        "preload": true
+      }
+    }
+  }
+}
