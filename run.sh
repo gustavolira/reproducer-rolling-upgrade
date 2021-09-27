@@ -5,19 +5,19 @@ export script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${script_dir}"/lib.sh
 trap "${script_dir}"/kill.sh EXIT
 
-downloadDGSource
-downloadDGTarget
-
-startDGSource
-startDGTarget
-
-createUser
-
-createSourceCache
-createRemoteStore
+#downloadDGSource
+#downloadDGTarget
+#
+#startDGSource
+#startDGTarget
+#
+#createUser
+#
+#createSourceCache
+#createRemoteStore
 
 #insertSomeEntriesIntoSource
 insertSomeEntriesIntoProtobuffSource
-doRollingUpgrade
+#doRollingUpgrade
 
-cleanupResources
+#cleanupResources
