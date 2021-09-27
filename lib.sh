@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 export DG83_VERSION="redhat-datagrid-8.3.0.CD20210915-server.zip"
 export script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DG_821_URL=https://download.eng.bos.redhat.com/devel/candidates/JDG/RHDG-8.2.1/redhat-datagrid-8.2.1-server.zip
@@ -71,7 +70,7 @@ function insertSomeEntriesIntoSource() {
 }
 
 function insertSomeEntriesIntoProtobuffSource() {
-  "${script_dir}"/jbang --fresh "${script_dir}"/ProtobuffLoad.java --entries 500 --write-batch 1000 --phrase-size 100 --hotrodversion 2.8 --version 8.3 --cache-name protobuff
+  "${script_dir}"/jbang --fresh --verbose "${script_dir}"/ProtobuffLoad.java --entries 500 --write-batch 1000 --phrase-size 100 --hotrodversion 2.8 --version 8.3 --cache-name protobuff
 }
 
 function doRollingUpgrade() {

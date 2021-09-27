@@ -1,7 +1,8 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS org.infinispan:infinispan-client-hotrod:12.1.7.Final
-//DEPS org.infinispan.protostream:protostream-processor:4.4.1.Final
-//DEPS org.infinispan.protostream:protostream:4.4.1.Final
+//DEPS org.infinispan:infinispan-bom:12.1.3.Final@pom
+//DEPS org.infinispan:infinispan-client-hotrod
+//DEPS org.infinispan.protostream:protostream-processor
+//DEPS org.infinispan.protostream:protostream
 //DEPS org.jeasy:easy-random-core:5.0.0
 //SOURCES Author.java
 //SOURCES Book.java
